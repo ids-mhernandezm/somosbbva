@@ -59,7 +59,7 @@ if ($onGae) {
     /** The name of the database for WordPress */
     define('DB_NAME', 'tutorialdb');
     /** MySQL database username */
-    define('DB_USER', 'root');
+    define('DB_USER', 'tutorial-user');
     /** MySQL database password */
     define('DB_PASSWORD', 'jepEQEKud6p?');
 }

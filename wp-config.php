@@ -55,7 +55,7 @@ if ($onGae) {
     define('DB_PASSWORD', 'jepEQEKud6p?');
 } else {
     /** Local environment */
-    define('DB_HOST', '127.0.0.1:3306');
+    define('DB_HOST', '127.0.0.1');
     /** The name of the database for WordPress */
     define('DB_NAME', 'tutorialdb');
     /** MySQL database username */
@@ -80,14 +80,14 @@ define('DB_COLLATE', '');
  * @since 2.6.0
  */
 
-define('AUTH_KEY',         'oUgkg9g8JuG8rVMpUAM1ENrCDO7QWj0MjN+VBWNfsdORPaGR5Ux18iMqDj8bS3+1oKbHKPrk0Wr1rOay');
-define('SECURE_AUTH_KEY',  'EFrfcASf3wDe7iBEwTQ/jsDDfbj8InpCZI3thmW6vXUJVFf6s0dIMDE16gq4QCWYjHjvXbzZIfdBN0dK');
-define('LOGGED_IN_KEY',    'L36YalZL+mkFMmRyD4Rr/C7k+ZMKJih+nWmvHkmgKr6waj/q66LzRzDQP1g1AABodMzkGHYuKq5vdLrH');
-define('NONCE_KEY',        'K1PT8BPgQh6PXKr0vnuGi30HVT9WpavzRoVcPz3vnDcHWMK+x9EHdeM//wOGaQ4ZiBuyRr6srt0agvGi');
-define('AUTH_SALT',        'RVs2T19jeYEiJo29BrKHSJKmN+DRcGEm0o/+4xE1c2nGT1nNw8MZ7nT2+eknJ14zSr07GZ1AsdibE/+Y');
-define('SECURE_AUTH_SALT', 'gcuMbtdtEXHaM5r6/uW5MYaxa1xUnNIo4G3tIy75y0v+gFSZAGIyDYTmT4iSW28RDi4+dIEwjRiBmFpY');
-define('LOGGED_IN_SALT',   '7QQnk+/vv1hokcUQFFMBsfiw/j0kQWZEpByr3P9QQzcoIhtfyPTX/For0BiZHQq4H+O/n4oHCK1wkF5A');
-define('NONCE_SALT',       '39LNc+vF6n+jr1z73lKgePGvOkdqYGIjlrPVLwTcI060mJXh8N0SG0KlTE/fb7tVN15sFsSi9y1qPcHA');
+define('AUTH_KEY',         'QFwm9U6Ll0Sy9Wo3EP3SzjKBsIWDmg1yGZORe3zaKc5ZFAO5xTdETyL03B6L1f4IsVN8SrcK/uOl5QmP');
+define('SECURE_AUTH_KEY',  'ow7L/qGDv0BBMVnz8Ura2iksAPHJn8NxaPcsy0DACd8Qm1p4XMBtoay7Z6Xf2Hbifj5BJzTOr1GYXqou');
+define('LOGGED_IN_KEY',    'A9cvpBbyuBxGTJqMJdJ3b0z/Kbupg/htOkR6GtXrtwjYEMiHd4mnL6jQ7CXLu2kr6E6T8sZEPAtMOazh');
+define('NONCE_KEY',        'Gay0fJbuUBQEwnLlzJnxFDFa+1xZSDowBd6BiJnF0NLEQIMu3A0JcOwHlQ0iuHR1Jcwn5qu6Oq1/krQm');
+define('AUTH_SALT',        'Hqp9VrH0ApHstZ1Na5scU5gsif4gdfKcvrDNQ1crtuM/7Q4HDYtdEYzxIXbwMBYVhnyqaMuvVFn9O6Yx');
+define('SECURE_AUTH_SALT', 'SUurXjmQAOWt8bA/W0zUeqO37ONc+osvA/ZiYjTdwWIBbtLWXEkB28/6IRGtK/xyTFVvj4iOTopCGBKc');
+define('LOGGED_IN_SALT',   '5AhQwxyAotbeEuQQl2jXKR6KfU9vVBzM39IDzF2RuFcLN+Qa4zAhWqHScmQspYBUj5S1pbB3CWpo/Jc3');
+define('NONCE_SALT',       'lTj0sWCXRo7Al+VZAicC2rJ+QAYIe/Ur1Q6lpsMdDObK+8W2mZJBRIeABxDP8Q9S/9jIcnNeVE2k+0qQ');
 
 /**#@-*/
 

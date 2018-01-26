@@ -48,20 +48,20 @@ if ($onGae) {
     /** Production environment */
     define('DB_HOST', ':/cloudsql/au-bbva-bancomer-paratirrhh:us-central1:tutorial-sql-instance');
     /** The name of the database for WordPress */
-    define('DB_NAME', 'tutorialdb');
+    define('DB_NAME', 'somosbbva_wp');
     /** MySQL database username */
-    define('DB_USER', 'tutorial-user');
+    define('DB_USER', 'admin');
     /** MySQL database password */
-    define('DB_PASSWORD', 'jepEQEKud6p?');
+    define('DB_PASSWORD', 'admin');
 } else {
     /** Local environment */
     define('DB_HOST', '127.0.0.1');
     /** The name of the database for WordPress */
-    define('DB_NAME', 'tutorialdb');
+    define('DB_NAME', 'somosbbva_wp');
     /** MySQL database username */
-    define('DB_USER', 'tutorial-user');
+    define('DB_USER', 'admin');
     /** MySQL database password */
-    define('DB_PASSWORD', 'jepEQEKud6p?');
+    define('DB_PASSWORD', 'admin');
 }
 
 /** Database Charset to use in creating database tables. */
@@ -80,14 +80,14 @@ define('DB_COLLATE', '');
  * @since 2.6.0
  */
 
-define('AUTH_KEY',         'QFwm9U6Ll0Sy9Wo3EP3SzjKBsIWDmg1yGZORe3zaKc5ZFAO5xTdETyL03B6L1f4IsVN8SrcK/uOl5QmP');
-define('SECURE_AUTH_KEY',  'ow7L/qGDv0BBMVnz8Ura2iksAPHJn8NxaPcsy0DACd8Qm1p4XMBtoay7Z6Xf2Hbifj5BJzTOr1GYXqou');
-define('LOGGED_IN_KEY',    'A9cvpBbyuBxGTJqMJdJ3b0z/Kbupg/htOkR6GtXrtwjYEMiHd4mnL6jQ7CXLu2kr6E6T8sZEPAtMOazh');
-define('NONCE_KEY',        'Gay0fJbuUBQEwnLlzJnxFDFa+1xZSDowBd6BiJnF0NLEQIMu3A0JcOwHlQ0iuHR1Jcwn5qu6Oq1/krQm');
-define('AUTH_SALT',        'Hqp9VrH0ApHstZ1Na5scU5gsif4gdfKcvrDNQ1crtuM/7Q4HDYtdEYzxIXbwMBYVhnyqaMuvVFn9O6Yx');
-define('SECURE_AUTH_SALT', 'SUurXjmQAOWt8bA/W0zUeqO37ONc+osvA/ZiYjTdwWIBbtLWXEkB28/6IRGtK/xyTFVvj4iOTopCGBKc');
-define('LOGGED_IN_SALT',   '5AhQwxyAotbeEuQQl2jXKR6KfU9vVBzM39IDzF2RuFcLN+Qa4zAhWqHScmQspYBUj5S1pbB3CWpo/Jc3');
-define('NONCE_SALT',       'lTj0sWCXRo7Al+VZAicC2rJ+QAYIe/Ur1Q6lpsMdDObK+8W2mZJBRIeABxDP8Q9S/9jIcnNeVE2k+0qQ');
+define('AUTH_KEY',         '2wN5j3Z7qXVSW3sy6Ab6hyt8BARG9LFgSQJoMna8qjtaZvceOCWjEhMJ8XAR3uSCUV7AqNNVxxwIN00A');
+define('SECURE_AUTH_KEY',  'Zruyowe7as26t/bknPQKs1eGbsn3u1JZ4d+7cF9ZR8SKtqO8q7KG3sQgD0StShlw4Yn8/ErsZG/SQCyx');
+define('LOGGED_IN_KEY',    'mc2YCAaLjOfTUIUc/ZopgUermHgXEjgNmwdkEvzhdPRHO4Ss8h2UooFXPBXJATqDEiJkMYfz7r/9ZecL');
+define('NONCE_KEY',        'OlAU7IluX4nm90DYCMVE8ZoPQQyw+qQF9IMn+Y2fyyKCeN/lfdCceHOXPwohsQztsnEpRweL50Sb1k44');
+define('AUTH_SALT',        'HCI7DpVrJYTlG9zJdGL3qFyOADwnEYkv1S8Uk1OleSspD6Sh7ezcRRhAEQQzQaFaZ5rjhdIJfOj0ifjQ');
+define('SECURE_AUTH_SALT', '1KUr/VZ4t7HqF6UAEYExf/P90RMDUqjK+mNdcEsX04XuRR9CIqCpjwTiUotZBMzu4G9PyRo4qygDVpAr');
+define('LOGGED_IN_SALT',   '3oN2EUB+GAFOEOyExs9DWpeSbBEo71WXZ9Dvix3jP29jp/z8FaNR12hczeP38kTng0hYG+yWfa6Oa/Jf');
+define('NONCE_SALT',       'GJ2qJ8iPU29/3u7OjXetMIJ+i1gNFcqLmSftwupBpoh0oG2dWfqtwOR5wF4izeGZ/C1ESzQ0rvWcWzVA');
 
 /**#@-*/
 

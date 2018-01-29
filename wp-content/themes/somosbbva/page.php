@@ -5,8 +5,6 @@
  */
 
 get_header(); // This fxn gets the header.php file and renders it ?>
-	<div id="primary" class="row-fluid">
-		<div id="content" role="main">
 			<?php if ( have_posts() ) : 
 			// Do we have any posts/pages in the databse that match our query?
 			?>
@@ -36,7 +34,5 @@ get_header(); // This fxn gets the header.php file and renders it ?>
 					<h1 class="404">Nothing has been posted like that yet</h1>
 				</article>
 
-			<?php endif; // OK, I think that takes care of both scenarios (having a page or not having a page to show) ?>
-		</div><!-- #content .site-content -->
-	</div><!-- #primary .content-area -->
+			<?php endif; // OK, I think that takes care of both scenarios (having a page or not having a page to show) ?>	
 <?php get_footer(); // This fxn gets the footer.php file and renders it ?>

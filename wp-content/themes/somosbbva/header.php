@@ -55,5 +55,3 @@
 	</div>
 
 </header><!-- #masthead .site-header -->
-
-<main class="main-fluid"><!-- start the page containter -->

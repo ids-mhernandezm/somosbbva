@@ -517,7 +517,8 @@ header nav ul li {
 }
 header nav ul li a {
   color: #ffff;
-  font-size: 14px;
+  font-size: 15px;
+  font-family: 'BentonSansBook';
 }
 /* Posts/Articles
 -------------------------------------------------------------- */

@@ -7,8 +7,13 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-<meta charset="<?php bloginfo( 'charset' ); ?>" />
-<meta name="viewport" content="width=device-width" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="<?php echo bloginfo('template_url'); ?>/css/bootstrap.css">
+  <link rel="stylesheet" href="<?php echo bloginfo('template_url'); ?>/css/custom.css">
+  <link rel="stylesheet" href="<?php echo bloginfo('template_url'); ?>/css/menu.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
 <title>
 </title>
 
@@ -42,12 +47,12 @@
 	?>
 >
 
-<header id="masthead" class="site-header">
+<header id="masthead" class="site-header" style="padding-bottom: 52px;">
 	<div> 
-		<div class="col-md-2 col-sm-2">
+		<div class="col-md-3 col-sm-3">
 			<a href="<?php echo get_site_url(); ?>" class="logo-cabecera">Somos BBVA Bancomer</a>
 		</div>
-		<div class="container col-md-10">
+		<div class="container col-md-9">
 			<nav class="site-navigation main-navigation">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); // Display the user-defined menu in Appearance > Menus ?>
 			</nav><!-- .site-navigation .main-navigation -->

@@ -124,9 +124,18 @@
   padding: 12px 1px 7px 1px;
 }
 .logo-cabecera{
-  color: rgb(39, 207, 195) !important;
+ /* color: rgb(39, 207, 195) !important;*/
+  color: #1AA5A4;
   border: solid 1px #072146;
   font-size: 20px;
+}
+
+.buscador {
+  padding-right: 3%;
+}
+
+.buscador i{
+  color: white;
 }
 .head p{
   font-family: 'BentonSansBBVALight';
@@ -245,3 +254,9 @@ p.columnaItem{
   line-height: 1;
 }
 /*Termina estilos de footer*/
+
+.error404{
+  text-align: center;
+  font-size: 8.8rem;
+  font-family: 'BentonSansBBVAMedium';
+}

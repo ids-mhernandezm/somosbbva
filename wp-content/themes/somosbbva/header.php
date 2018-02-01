@@ -47,14 +47,17 @@
 	?>
 >
 
-<header id="masthead" class="site-header" style="padding-bottom: 52px;">
+<header id="masthead" class="site-header" style="padding-bottom: 58px;">
 	<div> 
 		<div class="col-md-3 col-sm-3">
 			<a href="<?php echo get_site_url(); ?>" class="logo-cabecera">Somos BBVA Bancomer</a>
 		</div>
-		<div class="container col-md-9">
+		<div class="container col-md-8">
 			<nav class="site-navigation main-navigation">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); // Display the user-defined menu in Appearance > Menus ?>
+				<div class="buscador" style=""><?php get_search_form(); ?></div>
+				<div class="buscador" align="right"><a href="#"><i class="fa fa-search" aria-hidden="true"></i>
+					</a></div>
 			</nav><!-- .site-navigation .main-navigation -->
 		</div>	
 	</div>

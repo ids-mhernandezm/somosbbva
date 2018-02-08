@@ -55,10 +55,9 @@
 		<div class="container col-md-8">
 			<nav class="site-navigation main-navigation">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); // Display the user-defined menu in Appearance > Menus ?>
-				<div class="buscador" style=""><?php get_search_form(); ?></div>
-				<div class="buscador" align="right"><a href="#"><i class="fa fa-search" aria-hidden="true"></i>
-					</a></div>
 			</nav><!-- .site-navigation .main-navigation -->
+			<div class="buscador" align="right" id="buscador" onmouseout="swap_search()" style="display: none"><?php get_search_form(); ?></div>
+			<div class="buscador" id="icon" align="right"><a href="#"><i class="fa fa-search" aria-hidden="true" onclick="swap_search()"></i></a></div>
 		</div>	
 	</div>
 

@@ -60,7 +60,11 @@
 	</div>
 </div>
 
+<script type="text/javascript">
+
+
+</script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="<?php echo bloginfo('template_url'); ?>/js/bootstrap.min.js" type="text/javascript"></script>
-<script src="<?php echo bloginfo('template_url'); ?>/js/megamenu.js" type="text/javascript"></script>
 <script src="<?php echo bloginfo('template_url'); ?>/js/script.js" type="text/javascript"></script>

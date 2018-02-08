@@ -1,55 +1,95 @@
 <?php
 /**
- * The template for displaying search results pages
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
- *
- * @package WordPress
- * @subpackage Twenty_Seventeen
- * @since 1.0
- * @version 1.0
- */
+* The template for displaying search results pages
+*
+* @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
+*
+* @package WordPress
+* @subpackage Twenty_Seventeen
+* @since 1.0
+* @version 1.0
+*/
 
 get_header(); ?>
 
-<div class="wrap">
+<section id="primary" class="content-area">
+	<main id="main" class="site-main" role="main">
 
-	<header class="page-header">
 		<?php if ( have_posts() ) : ?>
-			<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'twentyseventeen' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-		<?php else : ?>
-			<h1 class="page-title"><?php _e( 'Nothing Found', 'twentyseventeen' ); ?></h1>
-		<?php endif; ?>
-	</header><!-- .page-header -->
 
-	<div id="primary" class="content-area">
-		<?php
-		if ( have_posts() ) :
-			/* Start the Loop */
+
+			<h2 class="page-title"><?php printf( __( 'Search Results for: %s', 'twentysixteen' ), '<span>' . esc_html( get_search_query() ) . '</span>' ); ?></h2>
+
+			<div id="results" class="container">
+			<?php
+		// Start the loop.
 			while ( have_posts() ) : the_post();
 
-				/**
-				 * Run the loop for the search to output the results.
-				 * If you want to overload this in a child theme then include a file
-				 * called content-search.php and that will be used instead.
-				 */
-				get_template_part( 'template-parts/post/content', 'excerpt' );
+			/**
+			 * Run the loop for the search to output the results.
+			 * If you want to overload this in a child theme then include a file
+			 * called content-search.php and that will be used instead.
+			 */
+			?>
+			<div class="col-md-3 col-sm-4 col-xs-6">
+				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-			endwhile; // End of the loop.
+					<?php the_title( sprintf( '<h4><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h4>' ); ?>
+					<?php echo get_post_type(); ?>
 
-			the_posts_pagination( array(
-				'prev_text' => twentyseventeen_get_svg( array( 'icon' => 'arrow-left' ) ) . '<span class="screen-reader-text">' . __( 'Previous page', 'twentyseventeen' ) . '</span>',
-				'next_text' => '<span class="screen-reader-text">' . __( 'Next page', 'twentyseventeen' ) . '</span>' . twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ),
-				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyseventeen' ) . ' </span>',
-			) );
+					
+				</article><!-- #post-## -->
+			</div>
 
-		else : ?>
-
-			<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'twentyseventeen' ); ?></p>
 			<?php
-		endif;
-		?>
-	</div><!-- #primary -->
-</div><!-- .wrap -->
 
-<?php get_footer();
+		// End the loop.
+		endwhile;
+
+		?>
+		</div>
+		<?php
+
+		// Previous/next page navigation.
+		the_posts_pagination( array(
+			'prev_text'          => __( 'Anterior', 'twentysixteen' ),
+			'next_text'          => __( 'Siguiente', 'twentysixteen' ),
+			'screen_reader_text' => __( 'Más resultados...','twentysixteen'),
+		) );
+
+	// If no content, include the "No posts found" template.
+	else :
+		?>
+		<section class="no-results not-found">
+
+			<h1 class="page-title"><?php _e( 'Nothing Found', 'twentysixteen' ); ?></h1>
+
+
+			<div class="page-content">
+				<?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
+
+					<p><?php printf( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'twentysixteen' ), esc_url( admin_url( 'post-new.php' ) ) ); ?></p>
+
+				<?php elseif ( is_search() ) : ?>
+
+					<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'twentysixteen' ); ?></p>
+
+
+				<?php else : ?>
+
+					<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'twentysixteen' ); ?></p>
+
+
+				<?php endif; ?>
+			</div><!-- .page-content -->
+		</section><!-- .no-results -->
+
+		<?php
+
+	endif;
+	?>
+
+</main><!-- .site-main -->
+</section><!-- .content-area -->
+
+<?php get_footer(); ?>
